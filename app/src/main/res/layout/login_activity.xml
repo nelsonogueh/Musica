@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.palmbell.iworship.LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/activity_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/bg"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:src="@mipmap/iworship"
+                app:srcCompat="@mipmap/iworship" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/errorMsgTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/alert_danger"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:visibility="invisible"
+                />
+
+            <EditText
+                android:id="@+id/signInUsername"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/input_text_field"
+                android:drawableLeft="@drawable/user_icon"
+                android:drawableStart="@drawable/user_icon"
+                android:ems="10"
+                android:hint="Username..."
+                android:inputType="textPersonName"
+                android:textColor="#ffffff"
+                android:textColorHint="#b3ffffff"
+                />
+
+            <EditText
+                android:id="@+id/signInPassword"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/input_text_field"
+                android:drawableLeft="@drawable/password_icon"
+                android:drawableStart="@drawable/password_icon"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:hint="Password..."
+                android:inputType="textPassword"
+                android:textColor="#ffffff"
+                android:textColorHint="#b3ffffff"
+                 />
+
+            <Button
+                android:id="@+id/signInButton"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sign_button"
+                android:text="SIGN IN"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/signup_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+
+                android:layout_gravity="start"
+                android:textAlignment="textStart"
+                android:text="Sign up"
+                android:textColor="#abffffff"
+                android:textStyle="bold" />
+
+            <!-- <TextView
+                android:id="@+id/font_iconTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="40sp"
+                android:text="@string/fa_user"
+                android:textColor="#ff6e39"
+                android:textStyle="bold" /> -->
+            
+            <TextView
+                android:id="@+id/skipsignup_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="end"
+                android:textAlignment="textEnd"
+                android:layout_weight="1"
+                android:hapticFeedbackEnabled="true"
+                android:text="Skip"
+                android:textColor="#abffffff"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

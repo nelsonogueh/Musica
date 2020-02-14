@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#77000000"
+    android:padding="5dp"
+    android:gravity="center_vertical"
+    android:layout_margin="10dp"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/plate_small" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/songname_listview_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This is the name of the song.mp3"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/songartist_listview_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(Artist names)"
+            android:textColor="@color/white"
+            android:textAlignment="textStart"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

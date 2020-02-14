@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.palmbell.iworship.SongsActivity">
+
+    <LinearLayout
+        android:id="@+id/activity_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_text_field"
+                android:drawableLeft="@android:drawable/ic_menu_search"
+                android:drawableStart="@android:drawable/ic_menu_search"
+                android:ems="10"
+                android:hint="Search songs..."
+                android:inputType="textPersonName"
+                android:textColor="#ffffff"
+                android:textColorHint="#b3ffffff"
+                android:textCursorDrawable="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/songsactivity_songslistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:visibility="visible"
+            android:dividerHeight="1dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
